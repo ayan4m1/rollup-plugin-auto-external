@@ -8,7 +8,7 @@ module.exports = ({
   builtins = true,
   dependencies = true,
   packagePath,
-  peerDependencies = true,
+  peerDependencies = true
 } = {}) => ({
   name: 'auto-external',
   options(opts) {
@@ -29,7 +29,7 @@ module.exports = ({
 
     ids = ids.map(safeResolve).filter(Boolean);
 
-    const external = id => {
+    const external = (id) => {
       if (typeof opts.external === 'function' && opts.external(id)) {
         return true;
       }
@@ -50,9 +50,9 @@ module.exports = ({
 
       const resolvedDirname = path.dirname(resolvedPath);
 
-      return ids.some(idx => resolvedDirname.startsWith(path.dirname(idx)));
+      return ids.some((idx) => resolvedDirname.startsWith(path.dirname(idx)));
     };
 
     return Object.assign({}, opts, { external });
-  },
+  }
 });
