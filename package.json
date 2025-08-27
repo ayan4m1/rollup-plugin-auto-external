@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublishOnly": "npm test",
+    "prepare": "husky",
     "test": "$(npm bin)/jest --modulePaths=__fixtures__/node_modules"
   },
   "keywords": [
@@ -26,7 +27,18 @@
     "node": ">=6"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/eslint-parser": "^7.28.0",
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
     "jest": "24.9.0",
+    "lint-staged": "^16.1.5",
     "prettier": "^3.6.2",
     "rollup": ">=4.49.0",
     "rollup-plugin-commonjs": "^9.2.1",
