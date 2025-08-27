@@ -1,0 +1,8 @@
+{
+  "preset": "conventionalcommits",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}
