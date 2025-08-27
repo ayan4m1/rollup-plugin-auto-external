@@ -24,7 +24,10 @@ module.exports = ({
     }
 
     if (builtins) {
-      ids = ids.concat(getBuiltins(semver.valid(builtins)));
+      const list = getBuiltins(semver.valid(builtins));
+
+      ids = ids.concat(list);
+      ids = ids.concat(list.map((builtin) => `node:${builtin}`));
     }
 
     ids = ids.map(safeResolve).filter(Boolean);
