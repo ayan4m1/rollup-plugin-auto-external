@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-auto-external",
+  "name": "@ayan4m1/rollup-plugin-auto-external",
   "version": "3.0.0-alpha.0",
   "description": "Rollup plugin to automatically exclude package.json dependencies and peerDependencies from your bundle",
   "main": "index.js",
@@ -52,7 +52,7 @@
     "semantic-release": "^24.2.7"
   },
   "peerDependencies": {
-    "rollup": ">=0.45.2"
+    "rollup": "2.x || 3.x || 4.x"
   },
   "dependencies": {
     "builtins": "^5.1.0",
