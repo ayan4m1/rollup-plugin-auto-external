@@ -1,6 +1,6 @@
 {
-  "preset": "conventionalcommits",
   "release": {
+    "preset": "conventionalcommits",
     "branches": [
       "main"
     ]
