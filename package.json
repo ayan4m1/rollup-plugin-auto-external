@@ -4,9 +4,8 @@
   "description": "Rollup plugin to automatically exclude package.json dependencies and peerDependencies from your bundle",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "npm test",
     "prepare": "husky",
-    "test": "$(npm bin)/jest --modulePaths=__fixtures__/node_modules"
+    "test": "npx jest --modulePaths=__fixtures__/node_modules"
   },
   "config": {
     "commitizen": {
