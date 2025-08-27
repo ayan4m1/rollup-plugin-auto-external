@@ -22,10 +22,10 @@
     "peerDependencies"
   ],
   "author": "Steven Benisek <steven.benisek@gmail.com>",
-  "homepage": "https://github.com/stevenbenisek/rollup-plugin-auto-external",
+  "homepage": "https://github.com/ayan4m1/rollup-plugin-auto-external",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stevenbenisek/rollup-plugin-auto-external.git"
+    "url": "git+https://github.com/ayan4m1/rollup-plugin-auto-external.git"
   },
   "license": "MIT",
   "engines": {
