@@ -8,6 +8,11 @@
     "prepare": "husky",
     "test": "$(npm bin)/jest --modulePaths=__fixtures__/node_modules"
   },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
   "keywords": [
     "rollup",
     "plugin",
@@ -24,12 +29,16 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=6"
+    "node": ">=18"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
     "@babel/eslint-parser": "^7.28.0",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cz-commitlint": "^19.8.1",
     "@eslint/js": "^9.34.0",
+    "commitizen": "^4.3.1",
+    "commitlint": "^19.8.1",
     "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-node": "^0.3.9",
