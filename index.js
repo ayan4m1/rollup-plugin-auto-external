@@ -62,6 +62,9 @@ module.exports = ({
       return ids.some((idx) => resolvedDirname.startsWith(path.dirname(idx)));
     };
 
-    return Object.assign({}, opts, { external });
+    return {
+      ...opts,
+      external
+    };
   }
 });
