@@ -2,7 +2,8 @@
   "name": "@ayan4m1/rollup-plugin-auto-external",
   "version": "3.0.0-alpha.0",
   "description": "Rollup plugin to automatically exclude package.json dependencies and peerDependencies from your bundle",
-  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
   "scripts": {
     "prepare": "husky",
     "test": "npx jest --modulePaths=__fixtures__/node_modules"

@@ -1,10 +1,10 @@
-const path = require('path');
-const semver = require('semver');
-const readPkg = require('read-pkg');
-const getBuiltins = require('builtins');
-const safeResolve = require('safe-resolve');
+import path from 'path';
+import semver from 'semver';
+import { readPackageSync } from 'read-pkg';
+import getBuiltins from 'builtins';
+import safeResolve from 'safe-resolve';
 
-module.exports = ({
+export default ({
   builtins = true,
   dependencies = true,
   packagePath,
@@ -12,7 +12,7 @@ module.exports = ({
 } = {}) => ({
   name: 'auto-external',
   options(opts) {
-    const pkg = readPkg.sync(packagePath);
+    const pkg = readPackageSync(packagePath);
     let ids = [];
 
     if (dependencies && pkg.dependencies) {
