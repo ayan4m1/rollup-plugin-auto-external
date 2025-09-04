@@ -24,7 +24,13 @@ module.exports = ({
     }
 
     if (builtins) {
-      const list = getBuiltins(semver.valid(builtins));
+      const list = [];
+
+      if (typeof builtins === 'string' && semver.valid(builtins)) {
+        list.push(...getBuiltins(builtins));
+      } else {
+        list.push(...getBuiltins());
+      }
 
       ids = ids.concat(list);
       ids = ids.concat(list.map((builtin) => `node:${builtin}`));
