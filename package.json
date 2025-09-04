@@ -64,5 +64,6 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "packageManager": "yarn@4.9.4"
 }

@@ -3,3 +3,4 @@
 node_modules
 npm-debug.log
 !__fixtures__/node_modules
+.yarn/
