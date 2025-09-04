@@ -46,7 +46,7 @@
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "jest": "24.9.0",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
     "semantic-release": "^24.2.7"
   },
@@ -58,9 +58,10 @@
   },
   "dependencies": {
     "builtins": "^5.1.0",
-    "read-pkg": "^3.0.0",
+    "inquirer": "9",
+    "read-pkg": "^9.0.1",
     "safe-resolve": "^1.0.0",
-    "semver": "5.7.2"
+    "semver": "^7.7.2"
   },
   "files": [
     "index.js"
