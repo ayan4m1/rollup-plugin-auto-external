@@ -1,8 +1,8 @@
-const getBuiltins = require('builtins');
 const path = require('path');
-const readPkg = require('read-pkg');
-const safeResolve = require('safe-resolve');
 const semver = require('semver');
+const readPkg = require('read-pkg');
+const getBuiltins = require('builtins');
+const safeResolve = require('safe-resolve');
 
 module.exports = ({
   builtins = true,
